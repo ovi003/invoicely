@@ -1,0 +1,76 @@
+.site-layout{
+	.header .nav-link{
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.banner{
+		height: 600px;
+		background-image: url('/images/banner.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: #323748;
+	}
+	.caption{
+		padding-top: 5rem;
+	}
+	.caption-title{
+		font-size: 2rem;
+		color: #fff;
+		font-weight: bold;
+	}
+	.caption-link{
+		font-size: 1rem;
+		font-weight: bold;
+		text-decoration: underline;
+		color: #fff;
+		margin: 1rem 0;
+		display: block;
+	}
+	.banner-footer{
+		background-color: rgba(255,255,255,0.5);
+		bottom: 0;
+	}
+	.footer{
+		background-color: #323748;
+	}
+	.footer ul li a{
+		color: #fff;
+	}
+	.footer .footer-title{
+		color: #fff;
+		font-weight: bold;
+	}
+	.section-title{
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+
+	.card-columns {
+	  @include media-breakpoint-only(md) {
+	    column-count: 3;
+	  }
+	  @include media-breakpoint-only(xl) {
+	    column-count: 4;
+	  }
+	}
+	.preview-section{
+		display: none;
+	}
+}
+
+body.fixed{
+	overflow: hidden;
+}
+body.fixed .preview-section{
+	top: 0;
+	bottom: 0;
+	z-index: 99999;
+	min-height: 100%;
+	overflow-y: auto;
+	display: block;
+
+	.preview-image{
+		top: 100px;
+	}
+}

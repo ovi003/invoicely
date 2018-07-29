@@ -1,0 +1,56 @@
+.login-layout-body{
+	background-color: #363B4D;
+}
+.login-layout{
+	padding: 50px 15px;
+	.logo{
+		max-width: 143px;
+	}
+	.form-box{
+		max-width: 380px;
+		background-color: #f5f5f5;
+	}
+	.box-header{
+		font-size: 20px;
+	}
+	.bg-gray{
+		background-color: #ddd;
+	}
+	.bg-black{
+		background-color: #000;
+	}
+	.signup-big-title{
+		font-size: 30px;
+	}
+	.signup-steps ul{
+		list-style: none;
+	}
+	.signup-steps ul li{
+		float: left;
+	}
+	.signup-steps ul .line{
+		width: 70px;
+		height: 50px;
+		position: relative;
+	}
+	.signup-steps ul .line:after{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		height: 2px;
+		background-color: #fff;
+	}
+	.signup-steps ul .step{
+		padding: 10px 20px;
+		border: 2px solid #fff;
+		color: #fff;
+		border-radius: 4px;
+	}
+	.client-type{
+		width: 180px;
+		border: 2px solid #ddd;
+	}
+}
